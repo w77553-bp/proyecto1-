@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog API App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <!-- Barra superior -->
+
+  <div class="barra-superior">🐾 IMÁGENES DE PERROS 🐾</div>
+
+  <!-- Contenido principal -->
+
+  <main>
+    <h1>🐶 Elija su raza de Perro favorita</h1>
+
+    <form id="formulario-perro">
+      <label for="raza">Selecciona una raza:</label>
+      <select id="raza">
+        <option value="">Aleatorio</option>
+      </select>
+      <button type="submit">Ver Perro</button>
+    </form>
+
+    <!-- Contenido principal -->
+
+    <div id="resultado"></div>
+
+    <!-- Historial -->
+
+    <h2>Historial:</h2>
+    <div id="historial"></div>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
